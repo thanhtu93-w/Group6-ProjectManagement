@@ -1,0 +1,251 @@
+.dashboard-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Dashboard Content Layout */
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Project List Styling */
+.project-list-container {
+  margin-top: 2rem;
+}
+
+.project-list-header {
+  display: grid;
+  grid-template-columns: 120px 1fr 180px;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 180px;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-row:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Role Badges */
+.role-badge {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.role-badge.admin {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.role-badge.member {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* Project Info */
+.project-info-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Dashboard Header Refinement */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.new-project-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+}
+
+.new-project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -2px rgba(16, 185, 129, 0.3);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-actions input, 
+.header-actions select {
+  padding: 0.625rem 1rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  outline: none;
+  min-width: 200px;
+}
+
+.header-actions input:focus, 
+.header-actions select:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.header-actions input::placeholder {
+  color: #9ca3af;
+}
+
+.header-actions select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+.project-name-cat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-name-cat h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827; /* Robust Black */
+}
+
+.project-category {
+  font-size: 0.875rem;
+  color: #4b5563;
+  background: #f3f4f6;
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+
+.project-dates {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.project-dates .deadline {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Progress Bar Styling */
+.project-progress-container {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+  border-radius: 9999px;
+  transition: width 0.4s ease-out;
+}
+
+/* Actions */
+.project-actions {
+  text-align: right;
+}
+
+.go-to-btn {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.go-to-btn:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Empty State */
+.no-projects {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Ensure text inside cards is black/dark */
+.card p, .card span, .card h3 {
+  color: #111827;
+}
+
+.card .deadline {
+  color: #dc2626;
+}
+
+.card .role-badge.admin {
+  color: #92400e;
+}
+
+.card .role-badge.member {
+  color: #065f46;
+}
