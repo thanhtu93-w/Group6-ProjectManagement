@@ -19,6 +19,10 @@ This project is built using the MERN stack and modern web tools:
 - **Notifications**: Get instant alerts when you are assigned to a task or when status changes.
 - **File Sharing**: Upload documents and images directly to specific tasks.
 
+## Project Presentation
+Watch the project presentation and demo video here:
+[TeamSync Presentation Video](https://youtu.be/5BQIVp4biX0)
+
 ## Installation Guide
 
 ### Prerequisites
